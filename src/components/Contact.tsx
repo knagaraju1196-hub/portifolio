@@ -25,12 +25,12 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-slate-100">
+    <section id="contact" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               I'm always interested in new opportunities and collaborations.
               Let's discuss how we can work together to bring your ideas to life.
             </p>
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-white mb-8">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-center">
@@ -47,8 +47,8 @@ const Contact: React.FC = () => {
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">kattanagaraju@email.com</p>
+                    <h4 className="text-lg font-semibold text-white">Email</h4>
+                    <p className="text-gray-300">kattanagaraju@email.com</p>
                   </div>
                 </div>
                 
@@ -57,8 +57,8 @@ const Contact: React.FC = () => {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+91 9059351350</p>
+                    <h4 className="text-lg font-semibold text-white">Phone</h4>
+                    <p className="text-gray-300">+91 9059351350</p>
                   </div>
                 </div>
                 
@@ -67,14 +67,14 @@ const Contact: React.FC = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900">Location</h4>
-                    <p className="text-gray-600">Hyderabad, India</p>
+                    <h4 className="text-lg font-semibold text-white">Location</h4>
+                    <p className="text-gray-300">Hyderabad, India</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
+                <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
                   <a
                     href="https://www.linkedin.com/in/nagaraju-katta-671137270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -91,9 +91,9 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Available for</h4>
-                <ul className="space-y-1 text-gray-600">
+              <div className="mt-8 p-6 bg-gray-800 rounded-lg">
+                <h4 className="text-lg font-semibold text-white mb-2">Available for</h4>
+                <ul className="space-y-1 text-gray-300">
                   <li>• mid-level/ senior-level positions</li>
                   <li>• Engineering projects</li>
                   <li>• Technical discussions</li>
@@ -104,11 +104,11 @@ const Contact: React.FC = () => {
 
             {/* Contact Form */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Send Message</h3>
+              <h3 className="text-2xl font-bold text-white mb-8">Send Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Full Name
                   </label>
                   <input
@@ -117,13 +117,13 @@ const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address
                   </label>
                   <input
@@ -132,13 +132,13 @@ const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
                     Subject
                   </label>
                   <input
@@ -147,13 +147,13 @@ const Contact: React.FC = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message
                   </label>
                   <textarea
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   ></textarea>
                 </div>

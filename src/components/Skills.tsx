@@ -48,12 +48,12 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="skills" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">Technical Skills</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               A comprehensive toolkit of engineering skills developed through years of hands-on experience
               and continuous learning.
             </p>
@@ -61,20 +61,20 @@ const Skills: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
                   {category.icon}
-                  <h3 className="text-2xl font-bold text-gray-900 ml-3">{category.title}</h3>
+                  <h3 className="text-2xl font-bold text-white ml-3">{category.title}</h3>
                 </div>
                 
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex}>
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-700 font-medium">{skill.name}</span>
+                        <span className="text-gray-300 font-medium">{skill.name}</span>
                         <span className="text-blue-600 font-semibold">{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div className="w-full bg-gray-600 rounded-full h-2">
                         <div 
                           className="bg-blue-600 h-2 rounded-full transition-all duration-1000 ease-out"
                           style={{ width: `${skill.level}%` }}
@@ -87,26 +87,26 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-16 bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-600 mb-6 text-center">Additional Competencies</h3>
+          <div className="mt-16 bg-gray-800 p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Additional Competencies</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
-                <h4 className="font-semibold text-gray-600 mb-1">Programming Languages</h4>
-                <p className="text-gray-400">Python, C++, CAM</p>
+                <h4 className="font-semibold text-gray-300 mb-1">Programming Languages</h4>
+                <p className="text-gray-500">Python, C++, CAM</p>
               </div>
               <div className="text-center">
-                <h4 className="font-semibold text-gray-600 mb-1">Industry Standards</h4>
-                <p className="text-gray-400">Engineering Standards, Design Principles</p>
+                <h4 className="font-semibold text-gray-300 mb-1">Industry Standards</h4>
+                <p className="text-gray-500">Engineering Standards, Design Principles</p>
               </div>
               <div className="text-center">
-                <h4 className="font-semibold text-gray-600 mb-1">Certifications</h4>
-                <h4 className="font-semibold text-gray-400 mb-1">Udemy</h4>
-                <p className="text-gray-400">Solidworks</p>
+                <h4 className="font-semibold text-gray-300 mb-1">Certifications</h4>
+                <h4 className="font-semibold text-gray-500 mb-1">Udemy</h4>
+                <p className="text-gray-500">Solidworks</p>
                 </div>
               <div className="text-center">
-                <h4 className="font-semibold text-grey-600 mb-1">Graduation</h4>
-                <h4 className="font-semibold text-gray-400 mb-1">Bachelors</h4>
-                <p className="text-gray-400">Mechanical Engineering</p>
+                <h4 className="font-semibold text-gray-300 mb-1">Graduation</h4>
+                <h4 className="font-semibold text-gray-500 mb-1">Bachelors</h4>
+                <p className="text-gray-500">Mechanical Engineering</p>
               </div>
             </div>
           </div>

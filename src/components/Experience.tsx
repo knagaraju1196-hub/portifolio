@@ -56,12 +56,12 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-white to-slate-50">
+    <section id="experience" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">Professional Experience</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               A progressive career in mechanical engineering with increasing responsibilities
               and impactful contributions to innovative projects.
             </p>
@@ -69,36 +69,36 @@ const Experience: React.FC = () => {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-blue-200"></div>
+            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gray-600"></div>
 
             {experiences.map((exp, index) => (
               <div key={index} className="relative mb-16 last:mb-0">
                 {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-black shadow-lg z-10"></div>
 
                 <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                  <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                  <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700">
                     <div className="flex items-center mb-4">
                       <Calendar className="w-5 h-5 text-blue-600 mr-2" />
                       <span className="text-blue-600 font-semibold">{exp.duration}</span>
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.position}</h3>
+                    <h3 className="text-2xl font-bold text-white mb-2">{exp.position}</h3>
                     <h4 className="text-xl text-blue-600 font-semibold mb-2">{exp.company}</h4>
                     
                     <div className="flex items-center mb-4">
-                      <MapPin className="w-4 h-4 text-gray-500 mr-2" />
-                      <span className="text-gray-600">{exp.location}</span>
+                      <MapPin className="w-4 h-4 text-gray-400 mr-2" />
+                      <span className="text-gray-300">{exp.location}</span>
                     </div>
                     
-                    <p className="text-gray-600 mb-4">{exp.description}</p>
+                    <p className="text-gray-300 mb-4">{exp.description}</p>
                     
                     <div className="space-y-2">
-                      <h5 className="font-semibold text-gray-900 mb-2">Key Achievements:</h5>
+                      <h5 className="font-semibold text-white mb-2">Key Achievements:</h5>
                       {exp.achievements.map((achievement, achIndex) => (
                         <div key={achIndex} className="flex items-start">
                           <ChevronRight className="w-4 h-4 text-blue-600 mt-1 mr-2 flex-shrink-0" />
-                          <span className="text-gray-600">{achievement}</span>
+                          <span className="text-gray-300">{achievement}</span>
                         </div>
                       ))}
                     </div>

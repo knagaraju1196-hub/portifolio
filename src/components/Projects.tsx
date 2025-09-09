@@ -70,12 +70,12 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section id="projects" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               A showcase of innovative engineering solutions that demonstrate my expertise
               in mechanical design, analysis, and problem-solving.
             </p>
@@ -83,7 +83,7 @@ const Projects: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative">
                   <img
                     src={project.image}
@@ -96,11 +96,11 @@ const Projects: React.FC = () => {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
+                  <p className="text-gray-300 mb-4">{project.description}</p>
                   
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Technologies Used:</h4>
+                    <h4 className="font-semibold text-white mb-2">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <span
@@ -114,10 +114,10 @@ const Projects: React.FC = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Key Achievements:</h4>
+                    <h4 className="font-semibold text-white mb-2">Key Achievements:</h4>
                     <ul className="space-y-1">
                       {project.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex} className="text-gray-600 text-sm flex items-start">
+                        <li key={achIndex} className="text-gray-300 text-sm flex items-start">
                           <span className="text-blue-600 mr-2">•</span>
                           {achievement}
                         </li>
