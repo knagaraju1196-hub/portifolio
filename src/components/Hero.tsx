@@ -3,7 +3,7 @@ import { Download, Mail, Linkedin, Github } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-black pt-20">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
