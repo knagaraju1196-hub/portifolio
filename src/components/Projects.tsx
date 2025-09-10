@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
     {
       title: "Waste Packet Analyzer",
       description: "Designed and fabricated a system for analyzing and sorting radioactive waste packets.",
-      image: "/images/waste-packet-analyzer.png",
+      image: "src/assets/Waste Packet Analyzer.png",
       technologies: ["Fusion360", "3D Modeling", "Engineering Analysis", "Technical Drawing"],
       duration: "12 months",
       achievements: [
