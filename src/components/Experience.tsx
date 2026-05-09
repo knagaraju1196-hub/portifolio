@@ -3,7 +3,19 @@ import { Calendar, MapPin, ChevronRight } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experiences = [
-    {
+     {
+      company: "Studio Parametric architects",
+      position: "BIM Engineer",
+      duration: "Oct 2025 - Present",
+      location: "India",
+      description: "Working as a BIM engineer across mechanical design and BIM-based modeling workflows",
+      achievements: [
+        "	Create and manage mechanical components and assemblies using Fusion 360",
+        "Prepare BIM and mechanical models optimized for fabrication and 3D printing",
+        "3D print physical models derived from BIM files for design review, coordination, and client presentations",
+        "Support architectural and MEP models using Archicad"
+      ]
+    }, {
       company: "Noki technologies Pvt Ltd",
       position: "Mechanical Design Engineer",
       duration: "Sept 2024 - Present",
