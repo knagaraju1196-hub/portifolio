@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
       company: "Studio Parametric architects",
       position: "BIM Engineer",
       duration: "Oct 2025 - Present",
-      location: "India",
+      location: "Bengaluru, India",
       description: "Working as a BIM engineer across mechanical design and BIM-based modeling workflows",
       achievements: [
         "	Create and manage mechanical components and assemblies using Fusion 360",
@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
       company: "Noki technologies Pvt Ltd",
       position: "Mechanical Design Engineer",
       duration: "Sept 2024 - Present",
-      location: "India",
+      location: "hyderabad, India",
       description: "Working as a mechanical engineer focusing on design and analysis of mechanical systems using CAD software and engineering principles.",
       achievements: [
         "Developed proficiency in SolidWorks, Fusion360 and AutoCAD for 3D modeling and technical drawings",
@@ -32,7 +32,7 @@ const Experience: React.FC = () => {
       company: "Nikhita Industries",
       position: "AutoCAD Designer/draftman",
       duration: "Jan 2024 - Sept 2024",
-      location: "India",
+      location: "Hyderabad, India",
       description: " Assisted in creating detailed 2D and 3D drawings for various projects, including mechanical components, and electrical layouts, using AutoCAD software.",
       achievements: [
         " Collaborated with senior designers and engineers to understand project requirements and contribute to the development of design solutions.",
@@ -44,7 +44,7 @@ const Experience: React.FC = () => {
       company: "National Small Industries Coorporation",
       position: "Internship",
       duration: "Sept 2022 - Oct 2022",
-      location: "India",
+      location: "Remote",
       description: "Completed engineering training and internship programs to gain practical experience in Ansys.",
       achievements: [
         "Learned fundamental engineering practices and industry standards",
@@ -57,7 +57,7 @@ const Experience: React.FC = () => {
       company: "Quinint techsoft ",
       position: "Internship",
       duration: "Sept 2021 - Oct 2021",
-      location: "India",
+      location: "Remote",
       description: "Completed engineering training and internship programs to gain practical experience in mechanical engineering applications.",
       achievements: [
         "Learned fundamental engineering practices for 3D printing",
